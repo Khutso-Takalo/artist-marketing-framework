@@ -1,0 +1,54 @@
+.content-page {
+  padding: 2rem;
+  text-align: center;
+}
+
+.subtext {
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.content-card {
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  color: #ccc;
+}
+
+.content-card:hover {
+  transform: translateY(-4px);
+}
+
+.content-thumb {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  height: 160px;
+}
+
+.view-button {
+  margin-top: 1rem;
+  background-color: #00bfff;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: #009fd6;
+}

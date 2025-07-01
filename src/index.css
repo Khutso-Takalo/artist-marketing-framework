@@ -185,6 +185,47 @@ footer {
   color: #cccccc;
 }
 
+/* Form and input styling for visibility and accessibility */
+input, textarea, select, button {
+  color: #1a1a1a;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline-offset: 2px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #00bfff;
+  box-shadow: 0 0 5px #00bfff88;
+}
+
+button {
+  background-color: #00bfff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #009fd6;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .nav-content {

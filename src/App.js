@@ -7,6 +7,7 @@ import Content from './pages/Content';
 import Bio from './pages/Bio';
 import Bookings from './pages/Bookings';
 import NotFound from './pages/NotFound';
+import AudioPlayer from './components/AudioPlayer';
 
 function App() {
   return (

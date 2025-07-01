@@ -1,0 +1,124 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 2rem;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #111827, #1f2937);
+  color: white;
+  border-radius: 20px;
+  padding: 4rem 2rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #cbd5e1;
+}
+
+.cta-button {
+  background-color: #00bfff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #009fd6;
+}
+
+/* About Preview */
+.about-preview {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.about-preview h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-preview p {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto 1.2rem;
+}
+
+.learn-more {
+  color: #00bfff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+/* Latest Section */
+.latest-preview {
+  background: #1e293b;
+  color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.latest-preview h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.latest-card {
+  font-size: 1.1rem;
+  background: #334155;
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.listen-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  color: #00bfff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.listen-link:hover {
+  text-decoration: underline;
+}.banner-image {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem;
+}
+
+.banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
