@@ -1,7 +1,9 @@
 export default function Footer() {
   return (
     <footer>
-      <p>© {new Date().getFullYear()} Artist Framework. All rights reserved.</p>
+      <div className="footer-content">
+        <p>© {new Date().getFullYear()} Artist Framework. All rights reserved.</p>
+      </div>
     </footer>
   );
 }

@@ -1,39 +1,55 @@
 /* Reset */
-html, body, #root {
-  height: 100%;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-  color: #222;
-  display: flex;
-  flex-direction: column;
 }
 
-/* App container fills full height */
+/* App layout */
 .app {
-  flex: 1 0 auto; /* allow to grow but not shrink below content */
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Full width background for nav/footer */
+nav, footer {
+  width: 100%;
+  background-color: #111;
+  color: white;
+  padding: 1rem 0;
+}
+
+/* Centered inner layout */
+.nav-content, .footer-content {
   max-width: 1200px;
   margin: 0 auto;
-  width: 100%;
-}
-
-/* Navbar and Footer styles */
-nav, footer {
-  background-color: #111;  /* reverted to dark */
-  color: white;
-  width: 100%;
-  max-width: 1200px;
-  margin: 1rem auto 0 auto;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-  border-radius: 10px;  /* subtle rounded edges */
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
+}
+
+/* Logo styling */
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* Nav links */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
 nav a {
@@ -44,67 +60,36 @@ nav a {
 }
 
 nav a:hover {
-  color: #007bff; /* blue hover */
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
-}
-
-/* Footer text */
-footer p {
-  margin: 0 auto;
-  font-size: 0.9rem;
+  color: #007bff;
 }
 
 /* Main content */
 main {
-  flex: 1 0 auto;
-  background: white;
-  margin: 1rem auto;
+  flex: 1;
+  max-width: 1200px;
+  margin: 2rem auto;
   padding: 2rem;
+  background-color: white;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  max-width: 1200px;
-  width: 100%;
-  box-sizing: border-box;
 }
 
-/* Sticky footer trick */
-body > #root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.app {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
+/* Footer text center */
+.footer-content {
+  justify-content: center;
+  text-align: center;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  nav, footer {
-    width: 100%;       /* on mobile, normal width */
-    margin: 0;
-    left: 0;
-    right: 0;
-  }
-  .nav-content, .footer-content {
+  .nav-content {
     flex-direction: column;
     align-items: flex-start;
   }
+
   nav ul {
     flex-direction: column;
     gap: 1rem;
     margin-top: 1rem;
-  }
-  nav a {
-    font-size: 1rem;
   }
 }
