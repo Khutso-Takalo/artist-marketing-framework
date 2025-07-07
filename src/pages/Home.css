@@ -1,124 +1,134 @@
+/* === General Styles === */
 .home {
+  font-family: 'Arial', sans-serif;
+}
+
+/* === Hero Section === */
+.hero-section {
+  background-image: url('/public/dj-banner.png');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  padding-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Hero Section */
-.hero {
-  background: linear-gradient(to right, #111827, #1f2937);
-  color: white;
-  border-radius: 20px;
-  padding: 4rem 2rem;
+.hero-content {
   text-align: center;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: #fff;
 }
 
-.hero h1 {
-  font-size: 2.8rem;
+.hero-content h1 {
+  font-size: 3rem;
   margin-bottom: 1rem;
-  font-weight: 700;
 }
 
-.hero p {
+.hero-content p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  color: #cbd5e1;
 }
 
 .cta-button {
-  background-color: #00bfff;
-  color: white;
   padding: 0.8rem 1.5rem;
+  background-color: #ff5e57;
+  color: #fff;
   border: none;
-  border-radius: 12px;
+  border-radius: 30px;
   text-decoration: none;
-  font-weight: 600;
-  transition: background 0.3s ease;
+  transition: background 0.3s;
 }
 
 .cta-button:hover {
-  background-color: #009fd6;
+  background-color: #ff3d3d;
 }
 
-/* About Preview */
-.about-preview {
-  background: white;
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+/* === Events Section === */
+.events-section {
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.event-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
   text-align: center;
 }
 
-.about-preview h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+.event-card img,
+.event-card video {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-.about-preview p {
-  font-size: 1.1rem;
-  color: #333;
-  max-width: 700px;
-  margin: 0 auto 1.2rem;
-}
-
-.learn-more {
-  color: #00bfff;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.learn-more:hover {
-  text-decoration: underline;
-}
-
-/* Latest Section */
-.latest-preview {
-  background: #1e293b;
-  color: white;
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.latest-preview h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-.latest-card {
-  font-size: 1.1rem;
-  background: #334155;
+.event-card h3 {
   padding: 1rem;
-  border-radius: 12px;
-  margin: 0 auto;
+  font-size: 1rem;
+}
+
+/* === Latest Track Section === */
+.featured-track {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.track-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
   max-width: 400px;
+  margin: 0 auto;
+}
+
+.track-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.track-card audio {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.track-card .track-info {
+  padding: 1rem;
 }
 
 .listen-link {
-  display: inline-block;
-  margin-top: 0.8rem;
-  color: #00bfff;
-  font-weight: bold;
   text-decoration: none;
+  color: #ff5e57;
+  font-weight: bold;
 }
 
-.listen-link:hover {
-  text-decoration: underline;
-}.banner-image {
-  width: 100%;
-  height: 350px;
-  overflow: hidden;
-  border-radius: 20px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-  margin-bottom: 2rem;
+/* === About Section === */
+.about-section {
+  padding: 3rem 1.5rem;
+  text-align: center;
 }
 
-.banner-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.learn-more {
+  text-decoration: none;
+  color: #ff5e57;
+  font-weight: bold;
 }

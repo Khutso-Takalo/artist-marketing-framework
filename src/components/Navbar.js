@@ -20,6 +20,7 @@ export default function Navbar() {
           <li><Link to="/content">Content</Link></li>
           <li><Link to="/bio">Bio</Link></li>
           <li><Link to="/bookings">Bookings</Link></li>
+          <li><Link to="/login">Login</Link></li> {/* 👈 ADDED LOGIN LINK */}
         </ul>
 
         {/* Hamburger Icon */}
@@ -45,8 +46,10 @@ export default function Navbar() {
           <li><Link to="/content" onClick={() => setMenuOpen(false)}>Content</Link></li>
           <li><Link to="/bio" onClick={() => setMenuOpen(false)}>Bio</Link></li>
           <li><Link to="/bookings" onClick={() => setMenuOpen(false)}>Bookings</Link></li>
+          <li><Link to="/login" onClick={() => setMenuOpen(false)}>Login</Link></li> {/* 👈 ADDED LOGIN TO MOBILE */}
         </ul>
       )}
     </nav>
   );
 }
+
